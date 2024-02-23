@@ -1,0 +1,15 @@
+/*
+::-webkit-scrollbar-track {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.5em;
+  background-color: rgb(33 33 33 / 0.75);
+}
+*/

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS Server Selector</title>
+
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="overflow-hidden user-select-none" style="height: 100vh;">
+  <div class="d-flex flex-column h-100">
+    <div class="mb-0">
+      <input type="text" class="form-control fs-5 py-2 border-0 border-bottom rounded-bottom-0 rounded-end shadow-none"
+        placeholder="Search for servers..." id="search">
+    </div>
+
+    <div id="servers" class="overflow-x-hidden overflow-y-auto border-bottom flex-grow-1">
+      <div class="d-flex flex-column align-items-center justify-content-center w-100 h-100">
+        <div class="spinner-border mb-3"></div>
+        <strong role="status">Loading...</strong>
+      </div>
+    </div>
+
+    <div class="p-2 w-100 d-flex flex-column">
+      <div id="ping-progress" class='d-flex flex-row'>
+        <div class="align-items-center">
+          <div class="spinner-border spinner-border-sm"></div>
+        </div>
+        <div class='d-inline-flex align-items-center text-muted ps-2'><small>Pinging...</small></div>
+      </div>
+
+      <small><pre id="ping-stats" class="d-none m-0"></pre></small>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+
+  <script src="./renderer.js"></script>
+
+  <!-- Our main JS -->
+  <!-- <script src="index.js"></script> -->
+</body>
+
+</html>
