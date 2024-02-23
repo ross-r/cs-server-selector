@@ -6,3 +6,4 @@ This is a tool that allows users to block individual servers for the game "Count
 
 ![01 - A screenshot of the program](/screenshots/1.png)
 ![02 - A screenshot of the program](/screenshots/2.png)
+![03 - A screenshot of the program](/screenshots/3.png)
